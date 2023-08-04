@@ -45,6 +45,23 @@
     <link rel="stylesheet" href="{{ asset('assets/css/customizer.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/bootstrap-switch-button.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/jqueryform/css/jquery.rateyo.min.css') }}">
+    <link rel="shortcut icon" href="https://puertokhalid.com/cc/puertosurvey/v1.4/uploads/ZmF2_1644498302.png" type="image/x-icon" />
+
+	<link rel="stylesheet" href="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/css/normalize.css">
+	<link rel="stylesheet" href="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/css/all.min.css">
+	<link rel="stylesheet" href="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/css/simple-line-icons.css">
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,900%7CGentium+Basic:400italic&subset=latin,latin">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css">
+
+	<link rel="stylesheet" href="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/css/popupConsent.css">
+	<link rel="stylesheet" href="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/css/home.css">
+
+
+		<link rel="stylesheet" type="text/css" href="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/css/style.php">
 
 
     @if (Utility::getsettings('rtl') == '1')
@@ -240,6 +257,13 @@
 <script src="{{ asset('vendor/js/custom.js') }}"></script>
 <script src="{{asset('assets/js/plugins/sweetalert2.all.min.js') }}"></script>
 <script src="{{ asset('vendor/jqueryform/js/jquery.rateyo.min.js') }}"></script>
+<script type="text/javascript" src="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/js/jquery.min.js"></script>
+
+<script src="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/js/popper.min.js"></script>
+<script src="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/js/bootstrap.min.js"></script>
+<script src="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/js/jquery.livequery.js"></script>
+
+<script src="https://puertokhalid.com/cc/puertosurvey/v1.4/assets/js/popupConsent.min.js"></script>
 
 
 

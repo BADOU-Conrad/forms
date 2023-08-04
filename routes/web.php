@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\SocialLoginController;
 use App\Http\Controllers\UserController;
@@ -100,6 +101,8 @@ Route::post('/role-permission/{id}', [
 ]);
 
 Route::get('/settings', [SettingsController::class, 'index'])->name('settings')->middleware(['auth', 'xss']);
+
+Route::post('/send-email', [MailController::class, 'sendEmail'])->name('email.send');
 
 Route::post('settings/app-name/update', [
     'as' => 'settings/app-name/update',

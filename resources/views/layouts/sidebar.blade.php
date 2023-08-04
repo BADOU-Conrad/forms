@@ -38,7 +38,7 @@ if (Auth::user()->type == 'Admin') {
                 <li class="dash-item dash-hasmenu {{ request()->is('/') ? 'active' : '' }}">
                     <a href="{{ route('home') }}" class="dash-link"><span class="dash-micon"><i
                                 class="ti ti-home"></i></span>
-                        <span class="dash-mtext custom-weight">{{ __('Dashboard') }}11</span></a>
+                        <span class="dash-mtext custom-weight">{{ __('Dashboard') }}</span></a>
                 </li>
 
                 @can('manage-user')
@@ -46,6 +46,14 @@ if (Auth::user()->type == 'Admin') {
                         <a class="dash-link" href="{{ route('users.index') }}"><span class="dash-micon">
                                 <i class="ti ti-user"></i></span>
                             <span class="dash-mtext">{{ __('Users') }}</span>
+                        </a>
+                    </li>
+                @endcan
+                @can('manage-permission')
+                    <li class="dash-item dash-hasmenu {{ request()->is('/') ? 'active' : '' }}">
+                        <a class="dash-link" href="{{ route('permission.index') }}"><span class="dash-micon">
+                                <i class="ti ti-key"></i></span>
+                            <span class="dash-mtext">{{ __('Permission') }}</span>
                         </a>
                     </li>
                 @endcan
